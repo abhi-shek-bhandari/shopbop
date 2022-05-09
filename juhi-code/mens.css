@@ -1,0 +1,379 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    
+}
+.container1{
+    margin-top: -30px;
+}
+ .container1 > .inner-text> img{
+    position: relative;
+    width: 97%;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.container1> .inner-text>.text{
+    /* position: absolute;
+    /* top: 10rem; */
+    /* margin-left: 6rem;
+    margin-top: -30rem;
+    text-align: left;
+    width: 20rem; */ 
+
+    position: absolute;
+    margin-top: -30%;
+    text-align: left;
+    margin-left: 5rem; 
+
+    /* position: absolute;
+    margin-top: -30%;
+    text-align: center;
+    margin-left: 38rem;
+    width: 18rem; */
+}
+button{
+    width: 8rem;
+    height: 3.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgb(249, 90, 32);
+    border: orangered;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(244, 123, 78);
+}
+.text > h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+}
+.text > p{
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* media query fot container1 */
+@media (max-width:800px) and (min-width:700px){
+        .container1 > .inner-text > .text{
+            width: 20rem;
+            margin-top: -15rem;
+        }
+        .container1 > .inner-text > .text > h1{
+            font-size: 35px;
+        }
+        .container1 > .inner-text > .text > p{
+            font-size: 17px;
+        }
+        .container1 > .inner-text > .text > button{
+            width: 90px;
+            height: 40px;
+            font-size: 12px;
+        }
+}
+@media (max-width: 700px) and (min-width:600px){
+    .container1 > .inner-text > .text{
+        width: 15rem;
+        margin-top: -15rem;
+    }
+    .container1 > .inner-text > .text > h1{
+        font-size: 30px;
+    }
+    .container1 > .inner-text > .text > p{
+        font-size: 17px;
+    }
+    .container1 > .inner-text > .text > button{
+        width: 90px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+@media (max-width:600px) and (min-width:500px){
+    .container1 > .inner-text > .text{
+        width: 10rem;
+        margin-top: -14rem;
+    }
+    .container1 > .inner-text > .text > h1{
+        font-size: 19px;
+    }
+    .container1 > .inner-text > .text > p{
+        font-size: 13px;
+    }
+    .container1 > .inner-text > .text > button{
+        width: 60px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
+@media (max-width:500px) and (min-width:400px){
+    .container1 > .inner-text > .text{
+        width: 10rem;
+        margin-top: -12rem;
+    }
+    .container1 > .inner-text > .text > h1{
+        font-size: 19px;
+    }
+    .container1 > .inner-text > .text > p{
+        font-size: 13px;
+    }
+    .container1 > .inner-text > .text > button{
+        width: 60px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
+
+
+
+.container2{
+    position: relative;
+    width: 97%;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.container2 > h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container2 > h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 4000;
+}
+.container2 > .cards{
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    cursor: pointer;
+    width: 80%;
+    margin-left: 6%;
+}
+
+.container2 > .cards > .card1>img{
+    width: 97%; 
+}
+
+/* .n1{
+    line-height: 35px;
+    font-size: 15px;
+} */
+
+.container3{
+    position: relative;
+    width: 98%;
+    /* height: 40rem; */
+    padding: 20px;
+    /* overflow: hidden; */
+    text-align: center;
+    background-color: rgb(235, 234, 234);
+    margin-bottom: -90px;
+}
+.container3 > .cards{
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    cursor: pointer;
+    width: 70%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    line-height: 35px;
+    
+}
+.container3 > .cards > .card2>img{
+    width: 90%; 
+}
+.container3 > .content> h1{
+    margin-bottom: 15px;
+    font-weight: 4000;
+    
+}
+.container3 >.content> h3{
+    margin-bottom: 20px;
+    margin-top: 35px;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+}
+.container3 > .cards > .card2> p{
+    font-size: 11px;
+}
+.container3 > .cards > .card2> #price{
+    font-weight: bolder;
+}
+/* .container3 > .cards > button{
+    border-radius: 50%;
+    width: 4rem;
+    height: 2.7rem;
+    font-size: larger;
+    margin-top: 10rem;
+    margin-left: -2rem;
+} */
+.container3 > #nobackground{
+    text-decoration: none;
+}
+.container3> .content>#btn{
+    /* text-align: right;
+    margin-right: 7rem; */
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 18px;
+    color: rgb(249, 90, 32);
+}
+.container4{
+    margin-left: 10px;
+}
+.container4 > .video>video{
+    position: relative;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.container4 > .video> .text2{
+    position: absolute;
+    margin-top: -30%;
+    text-align: left;
+    margin-left: 4rem;
+    width: 18rem;
+    
+}
+
+.container4 > .video> .text2 > h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: #fff;
+}
+.container4 > .video> .text2 > p{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.container4 > .video> .text2 > h5{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-left: -150px;
+}
+
+@media (max-width:800px) and (min-width:700px){
+    .container4 > .video > .text2 {
+        width: 11rem;
+        margin-top: -15rem;
+    }
+    .container4 > .video > .text2 > h1{
+        font-size: 35px;
+    }
+    .container4 > .video > .text2 > p{
+        font-size: 13px;
+    }
+    .container4 > .video > .text2 > h5{
+        margin-left: -35px;
+    }
+    .container4 > .video > .text2 > button{
+        width: 80px;
+        height: 40px;
+        font-size: 11px;
+    }
+}
+ @media (max-width: 700px) and (min-width:600px){ 
+    .container4 > .video > .text2 {
+        width: 11rem;
+        margin-top: -15rem;
+    }
+    .container4 > .video > .text2 > h1{
+        font-size: 35px;
+    }
+    .container4 > .video > .text2 > p{
+        font-size: 13px;
+    }
+    .container4 > .video > .text2 > h5{
+        margin-left: -35px;
+    }
+    .container4 > .video > .text2 > button{
+        width: 80px;
+        height: 40px;
+        font-size: 11px;
+    }
+} 
+@media (max-width:600px) and (min-width:500px){
+    .container4 > .video > .text2 {
+        width: 10rem;
+        margin-top: -14rem;
+        margin-left: 30px;
+    }
+    .container4 > .video > .text2 > h1{
+        font-size: 35px;
+    }
+    .container4 > .video > .text2 > p{
+        font-size: 12px;
+    }
+    .container4 > .video > .text2 > h5{
+        margin-left: -35px;
+    }
+    .container4 > .video > .text2 > button{
+        width: 80px;
+        height: 40px;
+        font-size: 11px;
+    }
+}
+
+
+.container5{
+    height: fit-content;
+    background-color: #fff;
+    /* line-height: 30px; */
+    margin-top: 30px;
+    /* border: 1px solid red; */
+    /* margin-left: 20rem; */
+    text-align: center;
+}
+.container5 > .cards{
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    cursor: pointer;
+    width: 70%;
+    margin-left: 10%;
+    
+}
+.container5 > .cards > .card2>img{
+    width: 90%; 
+}
+.container5 > .cards > .card2{
+    line-height: 35px;
+}
+.container5 > .content > h5{
+    line-height: 40px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+.container5 > .content > h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #111;
+}
+.container5 > .content > p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1px;
+    color: rgb(249, 90, 32);
+}
+.container5 > .cards > .card2 > p{
+    font-size: 11px;
+}
+.container5 > .cards > .card2 > #price{
+    font-weight: bolder;
+}
+
