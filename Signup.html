@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>shopbop Registration</title>
+</head>
+
+<body>
+    <div id="section">
+
+        <img id="head" src="https://images-na.ssl-images-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/3/images/logos/AUI_desktop_SB_rebrand_1-0.png._CB485948808_.png ">
+        <div id="main">
+
+            <div id="section_1">
+                <div>
+                    <p id="text_1">Create account</p>
+                </div>
+                <div>
+                    <p class="text_2"> Your name</p>
+                    <input id="name" class="input" type="text" required>
+                </div>
+                <div>
+                    <p class="text_2">Email</p>
+                    <input id="email" class="input" type="text" required>
+                </div>
+                <div>
+                    <p class="text_2">Password</p>
+                    <input id="pass" class="input" type="text" placeholder=" At least 6 characters" required>
+                    <i id="icon"></i>
+                    <p id="text_3"> Password must be at least 6 characters.</p>
+                </div>
+                <div>
+                    <p class="text_2">Re-enter password</p>
+                    <input class="input" type="text" required>
+                </div>
+                <div><button id="submit" href="">Create Account</button>
+                    <div id="linkop">
+                        <span>By creating an account, you agree to our</span>
+                        <a href="https://www.shopbop.com/ci/aboutShopBop/privacypolicy.html" class="link"> Privacy Notice</a>
+                        <span> and</span> <a href="https://www.shopbop.com/ci/aboutShopBop/privacypolicy.html" class="link">Conditions of Use</a>
+                        <span>.</span></div>
+
+
+
+                    <div id="section_2">
+
+                        <hr>
+                        <span id="text_4">Other register option</span>
+                        <div id="img">
+                            <a href="https://na.account.amazon.com/ap/signin?_encoding=UTF8&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.pape.max_auth_age=0&ie=UTF8&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=lwa&openid.assoc_handle=amzn_lwa_na&marketPlaceId=ATVPDKIKX0DER&arb=3ca36ad3-0046-4ae0-8e6b-58afe202a0b0&language=en_US&openid.return_to=https%3A%2F%2Fna.account.amazon.com%2Fap%2Foa%3FmarketPlaceId%3DATVPDKIKX0DER%26arb%3D3ca36ad3-0046-4ae0-8e6b-58afe202a0b0%26language%3Den_US&enableGlobalAccountCreation=1&metricIdentifier=amzn1.application.0c71532436c34d7c847876e8faf16238&signedMetricIdentifier=0XXM9dAGwpAkW8qI%2F%2F4wPD4imL1z65JbKzV2nC7A9Sw%3D">
+                                <img src="https://images-na.ssl-images-amazon.com/images/G/01/Shopbop/media/images/authportal/lwa_209x48._CB485945402_.png">
+                            </a>
+                        </div>
+
+                        <span>Already have an account?</span>
+                        <a class="link">Sign In</a>
+                        <div>
+                            <div> <a href="https://www.shopbop.com/ci/aboutShopBop/customerservice.html" class="link_1">Contact Us</a></div>
+                            <span id="text_5">@ 1999-2020 BOP LLC.All Rights Reserved.
+                                </span>
+                            <a href="https://www.shopbop.com/ci/aboutShopBop/privacypolicy.html" class="link_1">Privacy Notice Conditions of Use</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div id="section_3">
+                <hr id="shodow">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    // document.querySelector("form")
+    //form.addEventListener("submit",myfun)
+    document.querySelector("#submit").addEventListener("click", myfun)
+
+    function myfun() {
+        event.preventDefault()
+        var data = {
+            Name: document.querySelector("#name").value,
+            Email: document.querySelector("#email").value,
+            Password: document.querySelector("#pass").value,
+
+
+
+
+        }
+
+        console.log(data)
+        localStorage.setItem("details", JSON.stringify(data))
+        alert("Signup Successfull")
+        window.location.href = "login.html"
+
+    }
+</script>

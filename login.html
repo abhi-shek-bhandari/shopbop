@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopbop Sign In</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+
+    <img id="head" src="https://images-na.ssl-images-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/3/images/logos/AUI_desktop_SB_rebrand_1-0.png._CB485948808_.png "></div>
+    <div id="main">
+        <!-- section 1 -->
+        <div id="section_1">
+            <form action="input_section">
+                <div id="email">
+                    <p id="text_1">Sign In</p>
+
+                    <p class="text_2">Email</p>
+                    <input id="emaIL" class="input" type="text" />
+
+                    <p id="line">Password</p>
+                    <a id="link_1" href="https://www.shopbop.com/ap/forgotpassword?clientContext=135-0473733-1869707&showRememberMe=true&openid.pape.max_auth_age=1800&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&siteState=g5kBpPsxQ12IZylVXveR5BlPIKQRwf%2Fdb6fUJGLiEgB8AAAAAQAAAABiePBXcmF3AAAAAD1aGrfyIF6IE%2BJ7i%2Fa6ow%3D%3D%7Chttps%3A%2F%2Fwww.shopbop.com%3A443%2F&marketPlaceId=A2817T8MKXE20N&language=en_US&pageId=shopbop-desktop&openid.return_to=https%3A%2F%2Fwww.shopbop.com%3A443%2Fauth%2Fafter%2Fauthportal&prevRID=S3E2TY3XAK0D1JPZ69DV&openid.assoc_handle=shopbop_us_aui&openid.mode=checkid_setup&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Forgot Your Password?</a>
+
+                    <input id="pass" class="input" type="password" />
+
+                    <button id="submit">Sign In</button>
+                    <input type="checkbox" id="scale">
+                    <span id="text_2">Keep me signed in.</span>
+                    <a id="link_2">Details</a>
+                </div>
+                <!-- section 2 -->
+                <div id="section_2">
+                    <hr>
+                    <span id="text_4">More sign in option</span>
+                    <div id="img">
+                        <a href="https://na.account.amazon.com/ap/signin?_encoding=UTF8&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.pape.max_auth_age=0&ie=UTF8&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=lwa&openid.assoc_handle=amzn_lwa_na&marketPlaceId=ATVPDKIKX0DER&arb=3ca36ad3-0046-4ae0-8e6b-58afe202a0b0&language=en_US&openid.return_to=https%3A%2F%2Fna.account.amazon.com%2Fap%2Foa%3FmarketPlaceId%3DATVPDKIKX0DER%26arb%3D3ca36ad3-0046-4ae0-8e6b-58afe202a0b0%26language%3Den_US&enableGlobalAccountCreation=1&metricIdentifier=amzn1.application.0c71532436c34d7c847876e8faf16238&signedMetricIdentifier=0XXM9dAGwpAkW8qI%2F%2F4wPD4imL1z65JbKzV2nC7A9Sw%3D">
+                            <img src="https://images-na.ssl-images-amazon.com/images/G/01/Shopbop/media/images/authportal/lwa_209x48._CB485945402_.png">
+                        </a>
+
+                        <hr><span id="text_4">New to shopbop?</span><button id="submit_1">Create your Shopbop account</button></div>
+                    <div>
+            </form> <a href="https://www.shopbop.com/ci/aboutShopBop/customerservice.html " class="link_1 ">Contact Us</a></div>
+            <span id="text_5 ">@ 1999-2020 BOP LLC.All Rights Reserved.
+                       </span>
+            <a href="https://www.shopbop.com/ci/aboutShopBop/privacypolicy.html " class="link_1 ">Privacy Notice Conditions of Use</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    document.querySelector("#submit").addEventListener("click", myfun)
+    var details = JSON.parse(localStorage.getItem("details"));
+
+    function myfun() {
+        event.preventDefault()
+        var data = {
+
+            Email: document.querySelector("#emaIL").value,
+            Password: document.querySelector("#pass").value,
+
+        }
+
+        console.log(data)
+            // console.log(details)
+
+
+        if (details === null) {
+            alert("Please Create an Account");
+        } else if (details.Email === data.Email && details.Password === data.Password) {
+            alert("Login in Successful")
+                //localStorage.setItem("signin ", JSON.stringify(details))
+            window.location.href = "index.html"
+            localStorage.setItem("LOGO", JSON.stringify(data))
+        } else {
+            alert("User Does Not Exist")
+        }
+    }
+</script>
