@@ -1,0 +1,162 @@
+                * {
+                    font-family: arial, sans-serif;
+                    font-size: 13px;
+                    background-color: #f6f4f5;
+                }
+                
+                #icon {
+                    background-image: url(https://m.media-amazon.com/images/S/sash/mPGmT0r6IeTyIee.png);
+                    -webkit-background-size: 400px 750px;
+                    background-size: 400px 750px;
+                    background-repeat: no-repeat;
+                    width: 6px;
+                    background-position: -166px -130px;
+                    height: 13px;
+                    width: 14px;
+                    position: absolute;
+                    display: inline-block;
+                    margin-bottom: 2px;
+                    margin-top: 5px;
+                }
+                
+                #head {
+                    display: block;
+                    margin: 0 auto;
+                }
+                
+                #text_1 {
+                    font-size: 28px;
+                    margin-bottom: 22px;
+                }
+                
+                .text_2 {
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+                
+                #main {
+                    width: 312px;
+                    height: 613.72px;
+                    display: flex;
+                    margin: auto;
+                }
+                
+                #section_1 {
+                    display: block;
+                    width: 312%;
+                    height: 31px;
+                }
+                
+                .input {
+                    background-color: white;
+                    width: 312px;
+                    height: 31px;
+                    border: 1px solid #c9c8c8;
+                    border-top-color: #949494;
+                    outline: 0;
+                }
+                
+                #submit {
+                    background-color: #ee4a1b;
+                    width: 100%;
+                    height: 29px;
+                    color: white;
+                    border: 0px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                
+                span {
+                    font-size: 12px;
+                }
+                
+                .link {
+                    color: #ee4a1b;
+                    font-size: 12px;
+                }
+                
+                #linkop {
+                    display: inline-block;
+                }
+                
+                #text_3 {
+                    margin-bottom: 2;
+                    margin-top: 5px;
+                    display: inline-block;
+                    font-size: 12px;
+                    margin-left: 15px;
+                }
+                
+                #section_2 {
+                    height: auto;
+                    padding-top: 10px;
+                    text-align: center;
+                }
+                
+                #text_4 {
+                    font-size: 12px;
+                    color: #767676;
+                }
+                
+                hr {
+                    border: 1px solid #e7e7e7;
+                }
+                
+                #img {
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                }
+                
+                #link_1 {
+                    margin-left: 115px;
+                    color: #ee4a1b;
+                    font-size: 13px;
+                }
+                
+                #text_5 {
+                    font-size: 11px;
+                    color: #767676;
+                    margin-bottom: 200px;
+                    width: 300px;
+                }
+                
+                #scale {
+                    display: inline-block;
+                    height: 13px;
+                    width: 13px;
+                    vertical-align: top;
+                    position: relative;
+                    bottom: 2px;
+                }
+                
+                #line {
+                    display: inline-flex;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                    text-align: end;
+                }
+                
+                #link_2 {
+                    text-decoration: none;
+                    color: #ee4a1b;
+                    font-size: 13px;
+                    margin-top: 200px;
+                }
+                
+                #submit_1 {
+                    background-color: black;
+                    width: 100%;
+                    height: 29px;
+                    color: white;
+                    border: 0px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                
+                .link_1 {
+                    text-decoration: none;
+                    color: #ee4a1b;
+                    font-size: 11px;
+                    margin-top: 200px;
+                    text-align: right;
+                }
